@@ -18,7 +18,7 @@
                 align-items: center;
                 justify-content: center;
                 padding: 10px;
-                background-color: map-get($coloresPrincipales, primero);
+                background-image: linear-gradient(map-get($coloresPrincipales, primero),map-get($coloresPrincipales, quinto));
                 flex-direction: column;
                 margin: 10px;
                 transition: transform 0.5s;
