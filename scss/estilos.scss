@@ -1,0 +1,383 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+
+/*Fuentes locales*/
+@font-face {
+    font-family: "CaviarDreams";
+    src: url("../fonts/CaviarDreams.ttf");
+  }
+  
+  /*Fuentes via cdn*/
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Geologica:wght@400;700&family=Poppins:wght@200&display=swap');
+  
+  
+  
+  /*Estilos del body*/
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  nav {
+    background-color: #E8AA42;
+    color: black;
+    padding: 10px;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline;
+            margin-right: 10px;
+            a{
+                text-decoration: none;
+                color: black;
+              }
+          }
+      }
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  #ContenidoPrincipal{
+    display: grid;
+    grid-template-areas: "carrusel carrusel carrusel carrusel carrusel"
+    "noticia noticia noticia noticia aside"
+    "noticia noticia noticia noticia aside"
+    "noticia noticia noticia noticia aside";
+  }
+  
+  #Carrusel{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    grid-area: carrusel;
+  }
+  
+  #carouselExampleCaptions{
+    width: 40%;
+    h5{
+        color:black;
+        font-weight: bold;
+      }
+    p{
+        color: black;
+        font-weight: bold;
+      }
+  }
+
+  #imagen {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contenedor-noticia{
+    grid-area: noticia;
+  }
+  
+  .blog-noticia {
+    margin-bottom: 20px;
+    background-color: white;
+    font-family: 'Cairo';
+  }
+  
+  .noticia {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .noticia h2{
+    font-family: 'Franklin Gothic Medium';
+  }
+  
+  .noticia h4{
+    font-family: 'Poppins';
+  }
+  
+  .noticia p{
+    font-family: 'Poppins';
+  }
+  
+  .blog-noticia h4 {
+    border-bottom: 1px solid black;
+  }
+  
+  #paginasNoticias{
+    font-family: 'Poppins';
+  }
+  
+  #paginasNoticias a{
+    color: black;
+  }
+  
+  #resumenNoticias {
+    grid-area: aside;
+    padding-left: 15px;
+    margin-left: 15px;
+    font-style: italic;
+    font-family: Geologica;
+    background-color: lightgray;
+  }
+  
+  #resumenNoticias a:link{
+    color: cadetblue;
+  }
+  
+  #resumenNoticias a:visited{
+    color: #025464;
+  }
+  
+  .contactoContenido{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "imagen formulario";
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .imagenContacto{
+    grid-area: imagen;
+    margin-top: 10%;
+  }
+  
+  #tituloContacto{
+    color: dimgrey;
+    text-align: center;
+    font-family: "CaviarDreams";
+  }
+  
+  .formularioContacto{
+    background-color: white;
+    font-style: normal;
+    font-family: "CaviarDreams";
+    justify-content: center;
+    display: grid;
+    grid-area: formulario;
+  }
+  
+  #formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #btnEnviar{
+    text-align: center;
+  }
+  
+  #paginasNoticias{
+    text-align: center;
+  }
+  
+  #contenidoSobreNosotros{
+    display: grid;
+    grid-area: contenido;
+  }
+  
+  #contenidoSobreNosotros p{
+    font-family: 'Cairo';
+  }
+  
+  #sobreNosotros{
+    display: grid;
+    grid-template-areas: "contenido aside"
+    "organigrama organigrama";
+  }
+  
+  #videoBienvenida{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
+  
+  #sobreNosotros{
+    margin: 30px;
+    text-align: justify;
+  }
+  
+  #imagenNosotros{
+    grid-area: aside;
+    margin-top: 20%;
+  }
+  
+  #sobreNosotros aside{
+    background-color: transparent;
+  }
+  
+  #sobreNosotros h2{
+    margin: 10px;
+  }
+  
+  #sobreNosotros p{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  #imagenSobreNosotros{
+    padding: 10px;
+  }
+  
+  #sobreNosotros{
+    background-color: white;
+  }
+  
+  #organigrama{
+    grid-area: organigrama;
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "primer primer primer"
+    "segundo segundo segundo";
+    justify-content: center;
+  }
+  
+  #parteSuperior{
+    grid-area: primer;
+    justify-self: center;
+  }
+  
+  #tituloOrganigrama{
+    grid-area: titulo;
+    justify-self: center;
+  }
+  
+  .caja{
+    width: 230px;
+    height: 230px;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: .5s;
+  }
+  
+  .caja:hover{
+    transform: scale(0.9);
+    box-shadow: 0 0 10px rgb(22, 22, 22);
+  }
+  
+  
+  #divisiones div{
+    grid-area: segundo;
+    display: inline-block;
+  }
+  
+  #cuerpoServicios{
+    background-color: white;
+    margin: 10px;
+    text-align: justify;
+  }
+  
+  .servicioImagenIzquierda{
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "aside texto";
+  }
+  
+  .servicioImagenDerecha{
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "texto aside";
+  }
+  
+  .contenidoServicio{
+    padding: 20px;
+    grid-area: texto;
+    font-family: 'Cairo';
+  }
+  
+  .imagenServicio{
+    grid-area: aside;
+  }
+  
+  #contenidoNoticias{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* MOVIL */
+  
+  @media  (max-width: 700px){
+    /* HEADER */
+    header {
+      background-color: #E57C23;
+      padding: 10px;
+      display: grid;
+      justify-content: space-between;
+    }
+  
+    /* BODY */
+  
+    #ContenidoPrincipal{
+      grid-template-areas: "carrusel"
+      "noticia"
+      "noticia"
+      "noticia"
+      "aside";
+    }
+  
+    .contactoContenido{
+      grid-template-areas: "formulario";
+      margin-left: 20%;
+    }
+  
+    .imagenContacto{
+      display: none;
+    }
+  
+    #imagenNosotros{
+      display: none;
+    }
+  
+    #videoBienvenida iframe{
+      display: none;
+    }
+  
+    #divisiones{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .servicioImagenIzquierda{
+      grid-template-areas: "texto"
+      "aside";
+    }
+  
+    .servicioImagenDerecha{
+      grid-template-areas: "texto"
+      "aside";
+    }
+  
+    .imagenServicio{
+      justify-self: center;
+    }
+  
+    /* FOOTER */
+  
+    footer {
+      display: grid;
+      background-color: #025464;
+      padding: 10px;
+      text-align: center;
+      position: initial;
+      bottom: 0;
+      grid-template-areas: "menu"
+      "mision"
+      "return";
+    }
+  
+    .footer-mision{
+      grid-area: mision;
+      display: none;
+    }
+  }

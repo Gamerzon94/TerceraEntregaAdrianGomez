@@ -1,0 +1,28 @@
+/*Estilos del header*/
+  
+header {
+    background-color: $fondo-menu;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #logo{
+    width: 100px;
+  }
+  
+  #titulo {
+    font-size: 30px;
+    margin: 10px;
+    font-weight: bold;
+    padding-top: 15px;
+  }
+  
+  .redes-sociales {
+    display: flex;
+    align-items: center;
+  }
+  
+  .redes-sociales a{
+    margin-right: 10px;
+  }

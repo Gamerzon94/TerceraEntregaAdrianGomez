@@ -1,0 +1,41 @@
+  /*Estilos del footer*/
+  
+  footer {
+    display: grid;
+    background-color: #025464;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    grid-template-areas: "menu mision return";
+  }
+  
+  footer p{
+    font-family: "CaviarDreams";
+    color: white;
+  }
+  
+  footer a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-menu{
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    font-family: 'CaviarDreams';
+  }
+  
+  .footer-mision{
+    grid-area: mision;
+    display: flex;
+  }
+  
+  .footer-mision p{
+    margin: 5px;
+  }
+  
+  .footer-subir{
+    grid-area: return;
+  }
