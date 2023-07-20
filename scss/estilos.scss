@@ -14,10 +14,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-image: url(../img/fondo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: linear-gradient(map-get($coloresPrincipales, segundo),map-get($coloresPrincipales, cuarto));
   }
 
   section {
@@ -29,7 +26,7 @@
   @media  (max-width: 700px){
     /* HEADER */
     header {
-      background-color: #E57C23;
+      background-color: map-get($coloresPrincipales, primero);
       padding: 10px;
       display: grid;
       justify-content: space-between;

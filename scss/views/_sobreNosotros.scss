@@ -72,13 +72,12 @@
         margin: 10px;
         text-align: center;
         transition: .5s;
+        &:hover{
+            transform: scale(0.9);
+            box-shadow: 0 0 10px rgb(22, 22, 22);
+        }
     }
-
-    .caja:hover{
-        transform: scale(0.9);
-        box-shadow: 0 0 10px rgb(22, 22, 22);
-    }
-
+    
     #divisiones {
             div{
             grid-area: segundo;

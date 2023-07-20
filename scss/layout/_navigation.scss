@@ -1,6 +1,6 @@
 /*Estilos de la navegacion*/
     nav {
-        background-color: #E8AA42;
+        background-color: map-get($coloresPrincipales, segundo);
         color: black;
         padding: 10px;
         ul {

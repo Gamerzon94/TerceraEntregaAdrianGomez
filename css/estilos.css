@@ -7,14 +7,11 @@
 /*Fuentes via cdn*/
 /*Estilos del header*/
 header {
-  background-color: #E57C23;
+  background-color: #071952;
   padding: 10px;
   display: flex;
   justify-content: space-between;
-}
-
-#logo {
-  width: 100px;
+  color: white;
 }
 
 #titulo {
@@ -39,7 +36,6 @@ footer {
   background-color: #025464;
   padding: 10px;
   text-align: center;
-  position: sticky;
   bottom: 0;
   grid-template-areas: "menu mision return";
 }
@@ -76,7 +72,7 @@ footer a {
 
 /*Estilos de la navegacion*/
 nav {
-  background-color: #E8AA42;
+  background-color: #0B666A;
   color: black;
   padding: 10px;
 }
@@ -116,8 +112,113 @@ nav ul li a {
 
 /*Estilos del Index*/
 #ContenidoPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+#ContenidoPrincipal .contenidoInferior {
+  width: 70%;
   display: grid;
-  grid-template-areas: "carrusel carrusel carrusel carrusel carrusel" "noticia noticia noticia noticia aside" "noticia noticia noticia noticia aside" "noticia noticia noticia noticia aside";
+  grid-template-areas: "noticia aside";
+}
+#ContenidoPrincipal .contenidoInferior .blog-noticia1 {
+  margin-bottom: 20px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #071952), url(../../img/fondo.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  height: 48%;
+  font-family: "Cairo";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#ContenidoPrincipal .contenidoInferior .blog-noticia1 h2 {
+  color: rgb(190, 243, 230);
+}
+#ContenidoPrincipal .contenidoInferior .blog-noticia1 h4 {
+  color: rgb(116, 240, 209);
+}
+#ContenidoPrincipal .contenidoInferior .blog-noticia1 p {
+  color: rgb(33, 243, 191);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#ContenidoPrincipal .contenidoInferior .blog-noticia1 p a {
+  text-decoration: none;
+  color: rgb(33, 243, 191);
+}
+#ContenidoPrincipal .contenidoInferior .blog-noticia1:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+#ContenidoPrincipal .contenidoInferior .blog-noticia2 {
+  margin-bottom: 20px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #071952), url(../../img/servicio2.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  height: 48%;
+  font-family: "Cairo";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#ContenidoPrincipal .contenidoInferior .blog-noticia2 h2 {
+  color: rgb(190, 243, 230);
+}
+#ContenidoPrincipal .contenidoInferior .blog-noticia2 h4 {
+  color: rgb(116, 240, 209);
+}
+#ContenidoPrincipal .contenidoInferior .blog-noticia2 p {
+  color: rgb(33, 243, 191);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#ContenidoPrincipal .contenidoInferior .blog-noticia2 p a {
+  text-decoration: none;
+  color: rgb(33, 243, 191);
+}
+#ContenidoPrincipal .contenidoInferior .blog-noticia2:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+#ContenidoPrincipal #resumenNoticias {
+  grid-area: aside;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #071952), url(../../img/personal.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding-left: 15px;
+  margin-left: 15px;
+  font-family: "Cairo";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#ContenidoPrincipal #resumenNoticias h2 {
+  color: rgb(190, 243, 230);
+}
+#ContenidoPrincipal #resumenNoticias h4 {
+  color: rgb(116, 240, 209);
+}
+#ContenidoPrincipal #resumenNoticias p {
+  color: rgb(33, 243, 191);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#ContenidoPrincipal #resumenNoticias p a {
+  text-decoration: none;
+  color: rgb(33, 243, 191);
+}
+#ContenidoPrincipal #resumenNoticias:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 #Carrusel {
@@ -133,10 +234,12 @@ nav ul li a {
 #carouselExampleCaptions h5 {
   color: black;
   font-weight: bold;
+  font-family: Geologica;
 }
 #carouselExampleCaptions p {
   color: black;
   font-weight: bold;
+  font-family: Geologica;
 }
 
 #imagen {
@@ -146,30 +249,6 @@ nav ul li a {
 
 .contenedor-noticia {
   grid-area: noticia;
-}
-
-.blog-noticia {
-  margin-bottom: 20px;
-  background-color: white;
-  font-family: "Cairo";
-}
-.blog-noticia h4 {
-  border-bottom: 1px solid black;
-}
-
-#resumenNoticias {
-  grid-area: aside;
-  padding-left: 15px;
-  margin-left: 15px;
-  font-style: italic;
-  font-family: Geologica;
-  background-color: lightgray;
-}
-#resumenNoticias a:link {
-  color: cadetblue;
-}
-#resumenNoticias a:visited {
-  color: #025464;
 }
 
 /*Estilos de la pagina de noticia*/
@@ -322,7 +401,6 @@ nav ul li a {
   text-align: center;
   transition: 0.5s;
 }
-
 .caja:hover {
   transform: scale(0.9);
   box-shadow: 0 0 10px rgb(22, 22, 22);
@@ -336,10 +414,7 @@ nav ul li a {
 /*Estilos del body*/
 body {
   font-family: Arial, sans-serif;
-  background-image: url(../img/fondo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: linear-gradient(#0B666A, #97FEED);
 }
 
 section {
@@ -350,7 +425,7 @@ section {
 @media (max-width: 700px) {
   /* HEADER */
   header {
-    background-color: #E57C23;
+    background-color: #071952;
     padding: 10px;
     display: grid;
     justify-content: space-between;
