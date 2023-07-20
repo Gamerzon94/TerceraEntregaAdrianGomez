@@ -5,15 +5,24 @@
         justify-content: center;
         grid-template-areas: "imagen formulario";
         grid-template-columns: 1fr 2fr;
+        .imagenContacto{
+            grid-area: imagen;
+            margin-top: 10%;
+        }
+        #tituloContacto{
+            color: white;
+            font: bold;
+            text-align: center;
+            font-family: "CaviarDreams";
+        }
     }
 
-    .imagenContacto{
-        grid-area: imagen;
-        margin-top: 10%;
-    }
-
-    #tituloContacto{
-        color: dimgrey;
-        text-align: center;
-        font-family: "CaviarDreams";
+    @media  (max-width: 700px){
+        .contactoContenido{
+            grid-template-areas: "formulario";
+            margin-left: 30%;
+            .imagenContacto{
+                display: none;
+            }
+        }
     }

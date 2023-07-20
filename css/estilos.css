@@ -100,21 +100,19 @@ nav ul li a {
 
 /*Estilos de formularios */
 .formularioContacto {
-  background-color: white;
+  display: grid;
   font-style: normal;
   font-family: "CaviarDreams";
   justify-content: center;
-  display: grid;
   grid-area: formulario;
+  width: 80%;
 }
-
-#formulario {
+.formularioContacto #formulario {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-#btnEnviar {
+.formularioContacto #btnEnviar {
   text-align: center;
 }
 
@@ -330,7 +328,7 @@ nav ul li a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   .contenidoNoticias .contenedorNoticias {
     grid-template-columns: 1fr;
   }
@@ -349,18 +347,26 @@ nav ul li a {
   grid-template-areas: "imagen formulario";
   grid-template-columns: 1fr 2fr;
 }
-
-.imagenContacto {
+.contactoContenido .imagenContacto {
   grid-area: imagen;
   margin-top: 10%;
 }
-
-#tituloContacto {
-  color: dimgrey;
+.contactoContenido #tituloContacto {
+  color: white;
+  font: bold;
   text-align: center;
   font-family: "CaviarDreams";
 }
 
+@media (max-width: 700px) {
+  .contactoContenido {
+    grid-template-areas: "formulario";
+    margin-left: 30%;
+  }
+  .contactoContenido .imagenContacto {
+    display: none;
+  }
+}
 /*Estilos de la pagina de servicios*/
 #cuerpoServicios {
   background-color: white;
@@ -489,13 +495,6 @@ section {
   /* BODY */
   #ContenidoPrincipal {
     grid-template-areas: "carrusel" "noticia" "noticia" "noticia" "aside";
-  }
-  .contactoContenido {
-    grid-template-areas: "formulario";
-    margin-left: 20%;
-  }
-  .imagenContacto {
-    display: none;
   }
   #imagenNosotros {
     display: none;
