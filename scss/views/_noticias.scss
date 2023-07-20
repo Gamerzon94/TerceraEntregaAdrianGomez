@@ -1,28 +1,87 @@
 /*Estilos de la pagina de noticia*/
-    .noticia {
-        border-bottom: 1px solid black;
-        padding: 10px;
-        background-color: white;
+
+    .contenidoNoticias{
         display: flex;
         flex-direction: column;
-        h2{
-            font-family: 'Franklin Gothic Medium';
+        justify-content: center;
+        .contenedorNoticias{
+            width: 100%;
+            display: grid;
+            padding: 50px 0;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 20px;
+            .noticia {
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgb(170, 170, 170);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                background-color: map-get($coloresPrincipales, primero);
+                flex-direction: column;
+                margin: 10px;
+                transition: transform 0.5s;
+                h2{
+                    font-family: 'Franklin Gothic Medium';
+                    color:$colorTituloNoticia;
+                }
+                h4{
+                    font-family: 'Poppins';
+                    color:$colorSubTituloNoticia;
+                }
+                p{
+                    font-family: 'Poppins';
+                    color:$colorContenidoNoticia;
+                }&:hover{
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+            }
         }
-        h4{
+        #paginasNoticias{
+            display: grid;
+            justify-content: center;
             font-family: 'Poppins';
-        }
-        p{
-            font-family: 'Poppins';
+            ul.pagination{
+                display: flex;
+                list-style: none;
+                padding: 0;
+            }
+
+            li.page-item{
+                margin: 5px;
+            }
+            a.page-link{
+                color: black;
+                text-decoration: none;
+                padding: 5px 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
         }
     }
 
-    #paginasNoticias{
-        font-family: 'Poppins';
-        a{
-            color: black;
+    @media screen and (max-width: 1200px) {
+        .contenidoNoticias{
+            .contenedorNoticias {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .contenidoNoticias{
+            .contenedorNoticias {
+                grid-template-columns: 1fr; 
+            }
+            ul.pagination {
+                flex-direction: column;
+            }
+            li.page-item {
+                margin: 10px 0;
+                text-align: center;
+            }
         }
     }
 
-    #paginasNoticias{
-        text-align: center;
-    }
