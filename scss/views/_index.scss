@@ -1,0 +1,60 @@
+/*Estilos del Index*/
+    #ContenidoPrincipal{
+        display: grid;
+        grid-template-areas: "carrusel carrusel carrusel carrusel carrusel"
+        "noticia noticia noticia noticia aside"
+        "noticia noticia noticia noticia aside"
+        "noticia noticia noticia noticia aside";
+    }
+
+    #Carrusel{
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        grid-area: carrusel;
+    }
+
+    #carouselExampleCaptions{
+        width: 40%;
+        h5{
+            color:black;
+            font-weight: bold;
+        }
+        p{
+            color: black;
+            font-weight: bold;
+        }
+    }
+
+    #imagen {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contenedor-noticia{
+        grid-area: noticia;
+    }
+
+    .blog-noticia {
+        margin-bottom: 20px;
+        background-color: white;
+        font-family: 'Cairo';
+        h4 {
+            border-bottom: 1px solid black;
+        }
+    }
+
+    #resumenNoticias {
+        grid-area: aside;
+        padding-left: 15px;
+        margin-left: 15px;
+        font-style: italic;
+        font-family: Geologica;
+        background-color: lightgray;
+        a:link{
+            color: cadetblue;
+        }
+        a:visited{
+            color: #025464;
+        }
+    }

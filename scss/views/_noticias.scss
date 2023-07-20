@@ -1,0 +1,28 @@
+/*Estilos de la pagina de noticia*/
+    .noticia {
+        border-bottom: 1px solid black;
+        padding: 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        h2{
+            font-family: 'Franklin Gothic Medium';
+        }
+        h4{
+            font-family: 'Poppins';
+        }
+        p{
+            font-family: 'Poppins';
+        }
+    }
+
+    #paginasNoticias{
+        font-family: 'Poppins';
+        a{
+            color: black;
+        }
+    }
+
+    #paginasNoticias{
+        text-align: center;
+    }

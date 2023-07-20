@@ -1,0 +1,87 @@
+/*Estilos de la pagina Sobre Nosotros*/
+
+    #contenidoSobreNosotros{
+        display: grid;
+        grid-area: contenido;
+        p{
+            font-family: 'Cairo';
+        }
+    }
+
+    #sobreNosotros{
+        background-color: white;
+        display: grid;
+        grid-template-areas: "contenido aside"
+        "organigrama organigrama";
+        margin: 30px;
+        text-align: justify;
+        aside{
+            background-color: transparent;
+        }
+        h2{
+            margin: 10px;
+        }
+        p{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    #videoBienvenida{
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    #imagenNosotros{
+        grid-area: aside;
+        margin-top: 20%;
+        aside{
+            img{
+                padding: 10px;
+            }
+        }
+    }
+
+    #organigrama{
+        grid-area: organigrama;
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "primer primer primer"
+        "segundo segundo segundo";
+        justify-content: center;
+    }
+
+    #parteSuperior{
+        grid-area: primer;
+        justify-self: center;
+    }
+
+    #tituloOrganigrama{
+        grid-area: titulo;
+        justify-self: center;
+    }
+
+    .caja{
+        width: 230px;
+        height: 230px;
+        background-color: grey;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+        text-align: center;
+        transition: .5s;
+    }
+
+    .caja:hover{
+        transform: scale(0.9);
+        box-shadow: 0 0 10px rgb(22, 22, 22);
+    }
+
+    #divisiones {
+            div{
+            grid-area: segundo;
+            display: inline-block;
+        }
+    }
