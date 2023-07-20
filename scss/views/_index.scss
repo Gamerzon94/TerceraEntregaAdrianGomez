@@ -21,6 +21,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                transition: transform 0.5s;
                 h2{
                     color:$colorTituloNoticia;
                 }
@@ -52,6 +53,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                transition: transform 0.5s;
                 h2{
                     color:$colorTituloNoticia;
                 }
@@ -85,6 +87,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            transition: transform 0.5s;
             h2{
                 color:$colorTituloNoticia;
             }

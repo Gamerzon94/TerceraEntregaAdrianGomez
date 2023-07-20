@@ -73,7 +73,6 @@ footer a {
 /*Estilos de la navegacion*/
 nav {
   background-color: #0B666A;
-  color: black;
   padding: 10px;
 }
 nav ul {
@@ -87,7 +86,8 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
+  font-weight: bold;
 }
 
 /*Estilos de formularios */
@@ -135,21 +135,22 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s;
 }
 #ContenidoPrincipal .contenidoInferior .blog-noticia1 h2 {
-  color: rgb(190, 243, 230);
+  color: white;
 }
 #ContenidoPrincipal .contenidoInferior .blog-noticia1 h4 {
-  color: rgb(116, 240, 209);
+  color: white;
 }
 #ContenidoPrincipal .contenidoInferior .blog-noticia1 p {
-  color: rgb(33, 243, 191);
+  color: white;
   margin-left: 5%;
   margin-right: 5%;
 }
 #ContenidoPrincipal .contenidoInferior .blog-noticia1 p a {
   text-decoration: none;
-  color: rgb(33, 243, 191);
+  color: white;
 }
 #ContenidoPrincipal .contenidoInferior .blog-noticia1:hover {
   transform: scale(1.2);
@@ -167,21 +168,22 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s;
 }
 #ContenidoPrincipal .contenidoInferior .blog-noticia2 h2 {
-  color: rgb(190, 243, 230);
+  color: white;
 }
 #ContenidoPrincipal .contenidoInferior .blog-noticia2 h4 {
-  color: rgb(116, 240, 209);
+  color: white;
 }
 #ContenidoPrincipal .contenidoInferior .blog-noticia2 p {
-  color: rgb(33, 243, 191);
+  color: white;
   margin-left: 5%;
   margin-right: 5%;
 }
 #ContenidoPrincipal .contenidoInferior .blog-noticia2 p a {
   text-decoration: none;
-  color: rgb(33, 243, 191);
+  color: white;
 }
 #ContenidoPrincipal .contenidoInferior .blog-noticia2:hover {
   transform: scale(1.2);
@@ -200,21 +202,22 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s;
 }
 #ContenidoPrincipal #resumenNoticias h2 {
-  color: rgb(190, 243, 230);
+  color: white;
 }
 #ContenidoPrincipal #resumenNoticias h4 {
-  color: rgb(116, 240, 209);
+  color: white;
 }
 #ContenidoPrincipal #resumenNoticias p {
-  color: rgb(33, 243, 191);
+  color: white;
   margin-left: 5%;
   margin-right: 5%;
 }
 #ContenidoPrincipal #resumenNoticias p a {
   text-decoration: none;
-  color: rgb(33, 243, 191);
+  color: white;
 }
 #ContenidoPrincipal #resumenNoticias:hover {
   transform: scale(1.2);
