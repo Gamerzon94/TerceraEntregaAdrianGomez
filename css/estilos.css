@@ -411,7 +411,8 @@ nav ul li a {
 }
 
 #sobreNosotros {
-  background-color: white;
+  background-color: rgb(65, 65, 65);
+  border-radius: 10px;
   display: grid;
   grid-template-areas: "contenido aside" "organigrama organigrama";
   margin: 30px;
@@ -422,10 +423,13 @@ nav ul li a {
 }
 #sobreNosotros h2 {
   margin: 10px;
+  color: white;
+  font: bold;
 }
 #sobreNosotros p {
   margin-left: 10px;
   margin-right: 10px;
+  color: white;
 }
 
 #videoBienvenida {
