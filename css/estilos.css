@@ -125,7 +125,7 @@ nav ul li a {
 }
 #ContenidoPrincipal .contenidoInferior .blog-noticia1 {
   margin-bottom: 20px;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #071952), url(../../img/fondo.png);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #071952), url(../img/fondo.png);
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -157,7 +157,7 @@ nav ul li a {
 }
 #ContenidoPrincipal .contenidoInferior .blog-noticia2 {
   margin-bottom: 20px;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #071952), url(../../img/servicio2.png);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #071952), url(../img/servicio2.png);
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -189,7 +189,7 @@ nav ul li a {
 }
 #ContenidoPrincipal #resumenNoticias {
   grid-area: aside;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #071952), url(../../img/personal.png);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #071952), url(../img/personal.png);
   background-size: cover;
   background-position: center;
   border-radius: 15px;

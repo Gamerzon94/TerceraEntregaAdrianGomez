@@ -11,7 +11,7 @@
             grid-template-areas: "noticia aside";
             .blog-noticia1 {
                 margin-bottom: 20px;
-                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), map-get($coloresPrincipales, primero)),url(../../img/fondo.png);
+                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), map-get($coloresPrincipales, primero)),url(../img/fondo.png);
                 background-size: cover;
                 background-position: center;
                 border-radius: 15px;
@@ -42,7 +42,7 @@
             }
             .blog-noticia2 {
                 margin-bottom: 20px;
-                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), map-get($coloresPrincipales, primero)),url(../../img/servicio2.png);
+                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), map-get($coloresPrincipales, primero)),url(../img/servicio2.png);
                 background-size: cover;
                 background-position: center;
                 border-radius: 15px;
@@ -74,7 +74,7 @@
         }
         #resumenNoticias {
             grid-area: aside;
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), map-get($coloresPrincipales, primero)),url(../../img/personal.png);
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), map-get($coloresPrincipales, primero)),url(../img/personal.png);
             background-size: cover;
             background-position: center;
             border-radius: 15px;
